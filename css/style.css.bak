@@ -629,8 +629,9 @@ to {
     z-index:9999
 }
 @charset "utf-8";
-    #content {
-    animation:main 1s
+#content {
+    animation:main 1s;
+    position: relative;
 }
 .headertop,.pattern-center {
     animation:header 1s
@@ -695,8 +696,8 @@ input:-webkit-autofill {
     -webkit-box-shadow:0 0 0 1000px white inset
 }
 ::selection {
-    background:#9932CC;
-    color:#FF69B4
+    background:#444;
+    color:#fff
 }
 ::-moz-selection {
     background:#444;
@@ -852,11 +853,6 @@ dfn,cite,em,i {
     font-style:italic
 }
 blockquote {
-    margin-left:1em;margin-right:1em;padding:.25em 1em;color:#666;border-left: 1em solid#FF69B4
-}
-/*引用样式为引号*/
-/*
-blockquote {
     margin:0;
     padding:30px 60px;
     position:relative
@@ -867,7 +863,7 @@ blockquote:before {
     position:absolute;
     top:-25px;
     left:12px;
-    color:#FF69B4;
+    color:orange;
     font-family:FontAwesome
 }
 blockquote:after {
@@ -876,9 +872,9 @@ blockquote:after {
     position:absolute;
     bottom:-25px;
     right:-5px;
-    color:#FF69B4;
+    color:orange;
     font-family:FontAwesome
-}*/
+}
 blockquote p {
     margin:5px 0
 }
@@ -935,7 +931,7 @@ html {
     box-sizing:inherit
 }
 body {
-    background:#FFFFFF;
+    background:#fff;
     background-attachment:fixed;
     cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/normal.cur),auto
 }
@@ -946,9 +942,9 @@ blockquote,q {
     quotes:"" ""
 }
 hr {
-    background-color:#FF69B4;
+    background-color:#ccc;
     border:0;
-    height:10px;
+    height:1px;
     margin-bottom:1.5em
 }
 ul,ol {
@@ -1032,7 +1028,7 @@ a:focus {
 }
 a:hover,a:active {
     outline:0;
-    color:#FF0000
+    color:orange
 }
 .site-top {
     width:100%;
@@ -1234,10 +1230,9 @@ a:hover,a:active {
     overflow:hidden;
     margin:0 auto
 }
-/*导航栏到顶后的颜色*/
 .pattern-center-blank {
     padding-top:75px;
-    background-color:#FF69B4
+    background-color:#fff
 }
 @media(max-width:860px) {
     .pattern-center-sakura {
@@ -1358,7 +1353,7 @@ a:hover,a:active {
 .yya {
     position:fixed;
     left:0;
-    background:#FF69B4;
+    background:rgba(255,255,255,.95);
     box-shadow:0 1px 40px -8px rgba(0,0,0,.5)
 }
 .gizle {
@@ -1367,7 +1362,7 @@ a:hover,a:active {
     z-index:9999
 }
 .site-header:hover {
-    background-color:#FF69B4
+    background-color:#ff80c0
 }
 .sabit {
     top:0;
@@ -1384,7 +1379,7 @@ a:hover,a:active {
     margin:0
 }
 .site-title a {
-    color:#464646;
+    color:#404040;
     font-weight:400
 }
 .site-title a:hover {
@@ -1417,13 +1412,13 @@ a:hover,a:active {
 }
 .site-top .lower-cantiner {
     position:absolute;
-    left:56%;
-    min-width:950px;
+    left:50%;
+    min-width:758.4px;
     pointer-events:none
 }
 .site-top .lower {
     display:inline-block;
-    margin:15px 0 0 0;
+    margin:15px 0 0 10px;
     font-size:16px;
     position:relative;
     left:-50%;
@@ -1478,23 +1473,21 @@ a:hover,a:active {
     position:relative;
     -webkit-transition:all 1s ease
 }
-/*顶部导航栏字体*/
 .site-top ul li a {
     padding:10px 0;
     display:inline-block;
-    color:#FFFFFF
+    color:#404040
 }
 .site-top ul li a:hover {
-    color:#FFFFFF
+    color:orange
 }
-/*顶部导航栏鼠标经过*/
 .site-top ul li a:after {
     content:"";
     display:block;
     position:absolute;
     bottom:-16px;
     height:6px;
-    background-color:#FFFFFF;
+    background-color:#fe9600;
     width:100%;
     max-width:0;
     transition:max-width .25s ease-in-out
@@ -1505,7 +1498,7 @@ a:hover,a:active {
     position:absolute;
     bottom:-21px;
     height:6px;
-    background-color:#FFFFFF;
+    background-color:#fe9600;
     width:100%;
     max-width:0;
     transition:max-width .25s ease-in-out
@@ -1551,16 +1544,15 @@ a:hover,a:active {
     top:16px;
     -webkit-transform:rotateZ(-45deg)
 }
-/*顶部下拉栏*/
 .lower li ul {
     display:none;
     opacity:1;
     position:absolute;
-    background:#FF69B4;
+    background:#fff;
     padding:10px;
     top:46px;
     right:-13px;
-    width:130px;
+    width:80px;
     text-align:center;
     z-index:9999;
     border-radius:5px;
@@ -1609,7 +1601,7 @@ a:hover,a:active {
     font-size:14px;
     padding:8px 18px;
     text-transform:none;
-    color:#545454
+    color:#ff0000
 }
 .site-main {
     padding:40px 0 0
@@ -1678,7 +1670,7 @@ a:hover,a:active {
     color:#504e4e
 }
 .entry-title a:hover {
-    color:#FFFFFF
+    color:orange
 }
 .p-time {
     position:absolute;
@@ -2015,30 +2007,29 @@ i.iconfont.hotpost {
 .navigator i:hover {
     color:#fff;
     background:orange;
-    border:2px solid #FF69B4;
+    border:2px solid orange;
     -webkit-transition:all .2s ease-in-out;
     -moz-transition:all .2s ease-in-out;
     -o-transition:all .2s ease-in-out;
     transition:all .2s ease-in-out
 }
-/*网站底部*/
 .site-footer {
     padding:2%;
-    /*background:#FF69B4;*/
-    /*max-width:800px;*/
+    background:rgba(255,255,255,.8);
+    max-width:800px;
     margin-left:auto;
     margin-right:auto
 }
 .site-info {
     text-align:center;
-    font-size:14px;
-    color:#666666
+    font-size:13px;
+    color:#b9b9b9
 }
 .site-info a {
-    color:#666666
+    color:#b9b9b9
 }
 .site-info a:hover {
-    color:#000000
+    color:orange
 }
 .footertext p {
     margin-bottom:8px
@@ -2134,11 +2125,11 @@ i.iconfont.hotpost {
     color:#ff6d6d
 }
 .entry-content code {
-    background:#f9f2f4;
-    color:#FF69B4;
+    background:rgba(254,250,199,1);
+    color:#e67474;
     word-break:break-word;
     font-family:'Source Code Pro',monospace,Helvetica,Tahoma,Arial,STXihei,"STHeiti Light","Microsoft YaHei",sans-serif;
-    padding:3px;
+    padding:2px;
     text-shadow:none;
     border-radius:5px
 }
@@ -2161,12 +2152,14 @@ h1.entry-title {
     text-transform:uppercase
 }
 .entry-header h1.entry-title:before {
-    color: #f8ba0b;
+    content:" {";
+    color:#f8ba0b;
     font-size:1.5em;
     margin-right:6px;
     vertical-align:sub
 }
 .entry-header h1.entry-title:after {
+    content:"}";
     color:#f8ba0b;
     font-size:1.5em;
     margin-left:6px;
@@ -2187,10 +2180,10 @@ h1.entry-title {
     background:none
 }
 .entry-content hr:before {
-    content:'_____________________';
+    content:'...';
     display:inline-block;
     margin-left:.6em;
-    color:#FF69B4;
+    color:rgba(0,0,0,.8);
     position:relative;
     top:-30px;
     font-size:28px;
@@ -2301,13 +2294,13 @@ h1.page-title.mb- {
     padding:20px 0;
     border-bottom:1px dashed #ddd;
     border-top:1px dashed #ddd;
-    margin-top:60px;
-    height:95px
+    margin-top:30px;
+    height:82px
 }
 .post-lincenses {
     text-align:center;
-    padding-bottom:0;
-    font-size:16px
+    padding-bottom:5px;
+    font-size:14px
 }
 .post-lincenses a:hover {
     color:#888
@@ -2336,10 +2329,10 @@ h1.page-title.mb- {
 }
 .post-like a {
     color:#9fe0dd;
-    font-size:20px
+    font-size:13px
 }
 .post-like i {
-    font-size:18px
+    font-size:13px
 }
 .post-like a.done {
     cursor:not-allowed
@@ -2389,7 +2382,7 @@ h1.page-title.mb- {
     color:orange
 }
 .post-share .show-share {
-    margin-left:100px;
+    margin-left:10px;
     cursor:pointer;
     opacity:.6;
     float:right;
@@ -2405,7 +2398,7 @@ h1.page-title.mb- {
 .post-squares {
     overflow:hidden;
     width:100%;
-    margin:22px 0;
+    margin:55px 0;
     background:#000
 }
 .post-squares .background {
@@ -2554,7 +2547,7 @@ h1.page-title.mb- {
     height:250px
 }
 .author-profile {
-    padding:15px 12.78%;
+    padding:30px 12.78%;
     text-align:center
 }
 .author-profile .info {
@@ -3096,8 +3089,8 @@ h1.cat-title {
     font-size:25px;
     font-weight:400;
     padding-right:15px;
-    border-right:2px dashed #0bf;
-    color:#0bf
+    border-right:1px dashed #ddd;
+    color:#676767
 }
 .cat-des p {
     display:inline-block;
@@ -3107,7 +3100,7 @@ header.page-header {
     position:relative;
     text-align:center;
     margin-bottom:50px;
-    color:#0bf
+    color:#9c9c9c
 }
 .links {
     margin-bottom:80px
@@ -3190,11 +3183,11 @@ span.sitename {
 }
 .link-title span.fake-title {
     padding-left:10px;
-    border-left:6px solid #FF69B4
+    border-left:3px solid orange
 }
 .links ul li:before {
     content:"";
-    background-color:#FF69B4;
+    background-color:orange;
     -webkit-transform:skew(45deg,0);
     transform:skew(45deg,0);
     width:0;
@@ -3208,7 +3201,7 @@ span.sitename {
 }
 .links ul li:hover {
     color:#27323a;
-    border:1px solid #FF69B4
+    border:1px solid orange
 }
 .links ul li:hover:before {
     width:180%
@@ -3734,7 +3727,7 @@ a.page-numbers {
     line-height:1
 }
 .siren-checkbox-radio:checked+.siren-checkbox-radioInput:after {
-    background-color:#FF69B4;
+    background-color:#fe9600;
     border-radius:100%;
     content:"";
     display:block;
@@ -3830,7 +3823,6 @@ li.feature-2 {
     transform:translateY(0)
 }
 .notice {
-    text-align:center;
     padding:20px;
     border:1px dashed #e6e6e6;
     color:#969696;
@@ -3841,7 +3833,7 @@ li.feature-2 {
     border-radius:10px
 }
 .notice i {
-    /*float:center;*/
+    float:left;
     color:#999;
     font-size:18px;
     padding-right:10px
@@ -3857,6 +3849,7 @@ li.feature-2 {
 }
 @media(max-width:860px) {
     .notice {
+        display: none;
         margin-top:40px;
         margin-bottom:20px
     }
@@ -3867,6 +3860,10 @@ li.feature-2 {
     }
     .video-stu {
         display: none;
+    }
+    .headertop-bar::after {
+        height: 2.375rem !important;
+        bottom: -0.999rem !important;
     }
 }
 .headertop::before {
@@ -3941,22 +3938,23 @@ li.feature-2 {
 }
 @media(max-width:860px) {
     #centerbg {
-    height:300px;
-    background-attachment:scroll
-}
-.focusinfo .header-tou img {
-    width: 100px !important;
-}
-.header-info {
-    width: 90% !important;
-}
-.header-info:before {
-    top: 98px !important;
-}
-.top-social_v2 li {
-    margin-right: 0px !important; 
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto !important;
-}
+        height:300px;
+        background-attachment:scroll
+    }
+    .focusinfo .header-tou img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .header-info {
+        width: 90% !important;
+    }
+    .header-info:before {
+        top: 98px !important;
+    }
+    .top-social_v2 li {
+        margin-right: 0px !important; 
+        cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto !important;
+    }
 }
 #bgvideo {
     position: absolute;
@@ -3993,6 +3991,8 @@ li.feature-2 {
     border-radius:100%
 }
 .focusinfo .header-tou img {
+    width:130px;
+    height:130px;
     box-shadow:inset 0 0 10px #000;
     padding:5px;
     opacity:1;
@@ -4203,7 +4203,7 @@ li.feature-2 {
     color:#999
 }
 i.iconfont.js-toggle-search.iconsearch {
-    color:#FFFFFF;
+    color:#666;
     cursor:pointer;
     font-size:26px;
     -webkit-transition:all 300ms ease-in-out;
@@ -4319,7 +4319,7 @@ i.iconfont.js-toggle-search.iconsearch {
 }
 .s-search input {
     font-size:1rem;
-    background:none;
+    background:#none;
     padding:12px 24px 12px 64px;
     width:100%;
     outline:0;
@@ -4656,6 +4656,7 @@ i.iconfont.down {
 .share-mobile {
     display: none !important;
 }
+
 @media(max-width:630px) {
     .works-list {
         width:100% !important;
@@ -4977,7 +4978,7 @@ i.iconfont.js-toggle-search.iconsearch {
 #mo-nav ul {
     width:200px;
     height:auto;
-    margin:10px 9px
+    padding: 0px;
 }
 #mo-nav ul:hover li {
     color:rgba(255,255,255,.5)
@@ -5040,7 +5041,7 @@ i.iconfont.js-toggle-search.iconsearch {
     margin-bottom:20px
 }
 }::-webkit-scrollbar {
-    width:12px;
+    width:6px;
     height:6px;
     background-color:#eee
 }
@@ -5052,7 +5053,7 @@ i.iconfont.js-toggle-search.iconsearch {
     background-color:#eee
 }
 ::-webkit-scrollbar-thumb {
-    background-color:#FF69B4
+    background-color:#69d2e7
 }
 @keyframes poi-deg {
     0% {
@@ -5790,11 +5791,10 @@ button.botui-actions-buttons-button {
     padding-top:11px;
     text-decoration-line:none
 }
-/*页面左上角logo字体*/
 .logolink .sakurasono {
     background-color:rgba(255,255,255,.5);
     border-radius:5px;
-    color:#FF0000;
+    color:#464646;
     height:auto;
     line-height:25px;
     margin-right:0;
@@ -5804,14 +5804,14 @@ button.botui-actions-buttons-button {
     width:auto
 }
 .logolink a:hover .sakurasono {
-    background-color:#9B30FF;
+    background-color:orange;
     color:#fff
 }
 .logolink a:hover .shironeko,.logolink a:hover rt {
-    color:#9B30FF
+    color:orange
 }
 .logolink.moe-mashiro a {
-    color:#FFFFFF;
+    color:#464646;
     float:left;
     font-size:28px;
     font-weight:800;
@@ -6571,7 +6571,6 @@ progress {
     0% {
     width:0
 }
-/*归档页面*/
 }.art .art-content .al_mon_list li:before,.art .art-content #archives a:before {
     content:none
 }
@@ -6597,10 +6596,10 @@ progress {
     vertical-align:middle
 }
 .art .art-content #archives a {
-    color:#FF69B4
+    color:#000
 }
 .art .art-content #archives a:hover {
-    color:#FF0000
+    color:orange
 }
 .art .art-content #archives .al_year {
     padding-left:100px
@@ -6612,7 +6611,7 @@ progress {
     padding:0;
     border-radius:0;
     margin:0;
-    color:#FF69B4;
+    color:#000;
     background:none;
     font-weight:normal
 }
@@ -6944,15 +6943,14 @@ to {
 .scrollbar {
     position:fixed;
     top:0;
-    height:5px;
+    height:3px;
     background:#bebebe;
     transition-property:width,background;
     transition-duration:1s,1s;
-    z-index:99999;
-    background: #9B30FF !important
+    z-index:99999
 }
 #footer-sponsor {
-    font-size:13px
+    font-size:9px
 }
 @media(max-width:860px) {
     #footer-sponsor {
@@ -7185,7 +7183,6 @@ to {
     height:160px;
     width:257px
 }
-/*startdash部分*/
 .the-feature.from_left_and_right {
     position:relative;
     height:160px;
@@ -7223,11 +7220,11 @@ to {
 }
 .the-feature.from_left_and_right .info h3 {
     text-transform:uppercase;
-    color:#FFFFFF;
+    color:#fff;
     text-align:center;
     font-size:17px;
     padding:10px;
-    background:#FF69B4;
+    background:#111;
     margin:30px 0 0 0;
     -webkit-transition:all .35s ease-in-out;
     -moz-transition:all .35s ease-in-out;
@@ -7239,10 +7236,10 @@ to {
     transform:translateX(-100%)
 }
 .the-feature.from_left_and_right .info p {
-    /*font-style:italic;*/
-    font-size:15px;
+    font-style:italic;
+    font-size:12px;
     position:relative;
-    color:#FFFFFF;
+    color:#bbb;
     padding:20px 20px 20px;
     text-align:center;
     -webkit-transition:all .35s .1s linear;
@@ -7304,7 +7301,7 @@ to {
     background:#fff;
     color:#21252b
 }
-.highlight .line span::-moz-selection,.line::-moz-selection {
+.highlight .line span::selection,.line::selection {
     background:#fff;
     color:#21252b
 }
@@ -7636,12 +7633,11 @@ img[src*="#in-center"] {
     width:auto;
     height:65px;
     background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wave1.png") repeat-x;
-    _filter:alpha(opacity=80);
     position:absolute;
     bottom:0;
     width:400%;
     left:-236px;
-    z-index:4;
+    z-index:5;
     opacity:1;
     transition-property:opacity,bottom;
     transition-duration:.4s,.4s
@@ -7650,7 +7646,6 @@ img[src*="#in-center"] {
     width:auto;
     height:80px;
     background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wave2.png") repeat-x;
-    _filter:alpha(opacity=80);
     position:absolute;
     bottom:0;
     width:400%;
@@ -7804,11 +7799,8 @@ td.hljs-ln-numbers {
     display: inline-block;
 }
 #page {
-    min-height: calc(80vh);
-}
-/*#page {
     min-height: calc(100vh - 150px);
-}*/
+}
 .entry-content * {
     box-sizing: border-box;
 }
@@ -7823,57 +7815,23 @@ td.hljs-ln-numbers {
     z-index: 2;
     font-size: 16px;
 }
-.github-badge {
-	display: inline-block;
-	border-radius: 4px;
-	text-shadow: none;
-	font-size: 12px;
-	color: #fff;
-	line-height: 15px;
-	background-color: #ABBAC3;
-  margin-bottom: 5px;
+.toc {
+    width: 200px;
+    height: auto;
+    z-index: 98;
+    background-color: rgba(255,255,255,0);
+    transform: translateX(0);
+    right: calc((100% - 950px - 250px) / 2);
+    top:10px;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.github-badge .badge-subject {
-	display: inline-block;
-	background-color: #4D4D4D;
-	padding: 4px 4px 4px 6px;
-	border-top-left-radius: 4px;
-	border-bottom-left-radius: 4px;
+.toc-fixed {
+    position: fixed !important;
+    top: 85px;
 }
-.github-badge .badge-value {
-	display: inline-block;
-	padding: 4px 6px 4px 4px;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-}
-.github-badge .bg-brightgreen {
-	background-color: #4DC820 !important;
-}
-.github-badge .bg-orange {
-	background-color: #FFA500 !important;
-}
-.github-badge .bg-blueviolet {
-	background-color: #8833D7 !important;
-}
-.github-badge .bg-firebrick {
-	background-color: #EE2C2C !important;
-}
-.github-badge .bg-blue {
-	background-color: #007EC6 !important;
-}
-.github-badge .bg-lightgrey {
-	background-color: #9F9F9F !important;
-}
-.github-badge .bg-grey, .github-badge .bg-gray {
-	background-color: #555 !important;
-}
-.github-badge .bg-lightgrey, .github-badge .bg-lightgray {
-	background-color: #9f9f9f !important;
-}
-#lolijump {
-    position: fixed;
-    bottom: 25px;
-    left: 25px;
-    width: 60px;
-    height: 60px;
+
+@media(max-width:1200px) {
+    .toc {display: none;}
 }
