@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="/"/>
-  <updated>2020-03-15T14:39:33.832Z</updated>
-  <id>/</id>
+  <link href="https://gitee.com/HuangDaXian123/"/>
+  <updated>2020-03-15T14:49:05.620Z</updated>
+  <id>https://gitee.com/HuangDaXian123/</id>
   
   <author>
     <name>HuangDaXian</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>2020年3月14日白色情人节随笔</title>
-    <link href="/2020/03/14/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
-    <id>/2020/03/14/第一个博客/</id>
+    <link href="https://gitee.com/HuangDaXian123/2020/03/14/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://gitee.com/HuangDaXian123/2020/03/14/第一个博客/</id>
     <published>2020-03-14T14:13:00.000Z</published>
-    <updated>2020-03-15T14:39:33.832Z</updated>
+    <updated>2020-03-15T14:49:05.620Z</updated>
     
     <summary type="html">
     
@@ -35,17 +35,17 @@
     
     </summary>
     
-      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://gitee.com/HuangDaXian123/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="随笔" scheme="/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://gitee.com/HuangDaXian123/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="/2020/03/13/hello-world/"/>
-    <id>/2020/03/13/hello-world/</id>
+    <link href="https://gitee.com/HuangDaXian123/2020/03/13/hello-world/"/>
+    <id>https://gitee.com/HuangDaXian123/2020/03/13/hello-world/</id>
     <published>2020-03-13T03:08:24.297Z</published>
     <updated>2020-03-15T11:22:37.396Z</updated>
     
